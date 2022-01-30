@@ -1,0 +1,20 @@
+PANTHER GO-Slim Biological Process	sigGene.back.txt - REFLIST (11832)	sigGene.pbmc.txt (266)	sigGene.pbmc.txt (expected)	sigGene.pbmc.txt (over/under)	sigGene.pbmc.txt (fold Enrichment)	sigGene.pbmc.txt (raw P-value)	sigGene.pbmc.txt (FDR)
+positive regulation of lymphocyte activation (GO:0051251)	3	3	.07	+	44.48	2.00E-04	2.18E-02
+B cell receptor signaling pathway (GO:0050853)	7	5	.16	+	31.77	3.45E-06	3.01E-03
+humoral immune response (GO:0006959)	5	3	.11	+	26.69	5.42E-04	4.97E-02
+B cell activation (GO:0042113)	9	4	.20	+	19.77	1.40E-04	1.62E-02
+regulation of lymphocyte activation (GO:0051249)	15	5	.34	+	14.83	5.85E-05	1.02E-02
+antigen receptor-mediated signaling pathway (GO:0050851)	18	6	.40	+	14.83	1.03E-05	4.48E-03
+regulation of leukocyte activation (GO:0002694)	17	5	.38	+	13.08	9.59E-05	1.39E-02
+regulation of cell activation (GO:0050865)	18	5	.40	+	12.36	1.20E-04	1.61E-02
+immune response-activating surface receptor signaling (GO:0002429)	22	6	.49	+	12.13	2.68E-05	5.83E-03
+immune response-regulating surface receptor signaling (GO:0002768)	22	6	.49	+	12.13	2.68E-05	5.18E-03
+lymphocyte activation (GO:0046649)	26	7	.58	+	11.98	6.01E-06	3.49E-03
+leukocyte activation (GO:0045321)	31	7	.70	+	10.04	1.62E-05	4.69E-03
+positive regulation of cytosolic calcium ion concentration (GO:0007204)	25	5	.56	+	8.90	4.49E-04	4.35E-02
+immune response (GO:0006955)	58	9	1.30	+	6.90	1.47E-05	5.12E-03
+immune system process (GO:0002376)	225	19	5.06	+	3.76	1.83E-06	3.19E-03
+organic substance metabolic process (GO:0071704)	2319	26	52.13	-	.50	2.04E-05	5.08E-03
+macromolecule metabolic process (GO:0043170)	1720	18	38.67	-	.47	1.32E-04	1.65E-02
+gene expression (GO:0010467)	1274	10	28.64	-	.35	7.06E-05	1.12E-02
+transcription, DNA-templated (GO:0006351)	780	4	17.54	-	.23	2.04E-04	2.09E-02
