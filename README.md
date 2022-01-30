@@ -1,4 +1,3 @@
-# uPRO analysis scripts and
-# Hierarchical TF-enhancer-gene coexpression network (TEGCN) analysis
+# uPRO scripts and hierarchical TF-enhancer-gene coexpression network (TEGCN) analysis
 
 
