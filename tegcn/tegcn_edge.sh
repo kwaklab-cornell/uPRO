@@ -40,13 +40,14 @@ bedtools intersect -wa -wb -a $BTS -b $TD/tfbs.bed | \
 	sort -k1,1 -k2,2n -k3,3n -k4,4 -k5,5 -k6,6 -u > \
 	$OUT/dbts_tfbs.bed
 
-# generate bed file of active gene tsses
+# generate position bed file of active gene tss's
 awk 'NR<=2{next}
   {split($1,a,";"); split(a[1],b,":");split(b[2],c,"-"); \
   if(a[3]=="+") print b[1]"\t"c[1]"\t"c[1]+1"\t"$1"\t0\t+"; \
   else print b[1]"\t"c[2]"\t"c[2]"\t"$1"\t0\t-";}' $GE | \
   sort -k1,1 -k2,2n -k3,3n -k6,6 -u > $TD/genepos.bed
 
+# Build all edges between BTS and genes within 1 Mb
 sort -k1,1 -k2,2n -k3,3n $BTS > $TD/tss.bed
 bedtools window -a $TD/tss.bed -b $TD/genepos.bed -w 1000000 | \
 awk '{pos=int(($2+$3)/2); d=pos-$8;if(d<0) d=-d; print $1":"$2"-"$3";"$4";"$6"\t"$10"\t"d}' \
