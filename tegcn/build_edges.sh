@@ -3,7 +3,7 @@
 
 # Print usage
 if [ $# -lt 2 ]; then
-    echo -e "Usage:\t tegcn_edge.sh [options] -t <TFBS bed> -b <BTS bed> -g <gene expression table>"
+    echo -e "Usage:\t build_edges.sh [options] -t <TFBS bed> -b <BTS bed> -g <gene expression table>"
     echo -e "Options:"
     echo -e "\t--hr\tHigh resolution version"
     echo -e "\t--out\tOutput directory (default = \"edges\")"
