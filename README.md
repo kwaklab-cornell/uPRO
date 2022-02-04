@@ -6,7 +6,9 @@ source("scripts/tegcn.R")
 ```
 
 load and calculation coexpression coefficient in
-  tcn = make_tegcn()
+```
+tcn = make_tegcn()
+```
 
 Plot network on chr 17
 ```
