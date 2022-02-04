@@ -15,7 +15,7 @@ Plot network on chr 17
 tcn.chr17.net = make_2tfnet(tcn, tf1 = "E47", tf2 = "USF", chr = "chr17")
 plot_tfnet(tcn.chr17.net)
 ```
-![plot](./tegcn/plot/chr17_tfnet.png)
+![network plot](https://github.com/kwaklab-cornell/uPRO/blob/main/tegcn/plots/chr17_tfnet.png)
 
 
 TFs-enhancer correlations that are significantly more correlated to cognate than non-cognate
