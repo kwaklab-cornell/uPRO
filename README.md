@@ -4,15 +4,26 @@ Nascent RNA sequencing is a powerful method to measure transcription with high r
 
 ## Running TEGCN analysis
 
-### required data files
-- Bed file of Bidirectional Transcription Sites (BTS) positions (tegcn/bed/dBTS/bed)
+### Required data files
+- Bed file of Bidirectional Transcription Sites (BTS) positions (tegcn/bed/dBTS.bed)
 - Bed file of franscription factor binding sites (TFBS) (tegcn/bed/tfbsCons.hg38.bed)
 - uPRO read count table at gene bodies (tegcn/readcount/gene_erpkm.txt)
 - uPRO read count table at BTS regions (tegcn/readcount/dBTS_readcount.txt)
 
-### Contructing network edges
-
+### Contruct network edges
+under UNIX shell
 ```
+bash scripts/build_edges.sh -t <TFBS bed> -b <BTS bed> -g <gene expression table>
+```
+Output: network edge files under edges directory
+
+Example
+```
+cd tegcn
+bash ./scripts/build_edges.sh -t bed/tfbsCons.hg38.bed -b bed/dBTS.bed -g readcount/gene_erpkm.txt
+```
+
+
 setwd("tegcn/")
 source("scripts/tegcn.R")
 ```
