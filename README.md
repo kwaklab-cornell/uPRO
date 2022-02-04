@@ -11,29 +11,32 @@ Nascent RNA sequencing is a powerful method to measure transcription with high r
 - uPRO read count table at BTS regions (tegcn/readcount/dBTS_readcount.txt)
 
 ### Contruct network edges
-under UNIX shell
+Under UNIX shell
 ```
 bash scripts/build_edges.sh -t <TFBS bed> -b <BTS bed> -g <gene expression table>
 ```
-Output: network edge files under edges directory
+##### Output
+network edge files under edges directory
 
-Example
+##### Example
 ```
 cd tegcn
 bash ./scripts/build_edges.sh -t bed/tfbsCons.hg38.bed -b bed/dBTS.bed -g readcount/gene_erpkm.txt
 ```
 
-
+### TEGCN R scripts
+##### Set up scripts
+```
 setwd("tegcn/")
 source("scripts/tegcn.R")
 ```
 
-load and calculation coexpression coefficient in
+##### Load and calculate coexpression coefficient
 ```
 tcn = make_tegcn()
 ```
 
-Plot network on chr 17
+#### Plot network on chr 17
 ```
 tcn.chr17.net = make_2tfnet(tcn, tf1 = "E47", tf2 = "USF", chr = "chr17")
 plot_tfnet(tcn.chr17.net)
@@ -41,6 +44,7 @@ plot_tfnet(tcn.chr17.net)
 ![network plot](https://github.com/kwaklab-cornell/uPRO/blob/main/tegcn/plots/chr17_tfnet.png)
 
 
+#### Find significantly associated TFs
 TFs-enhancer correlations that are significantly more correlated to cognate than non-cognate
 ```
 tf.cor = tegcn_tfcor(tegcn = tcn)
@@ -49,6 +53,7 @@ plot_guitar(tf.cor, n = 20)
 ```
 ![guitar plot](https://github.com/kwaklab-cornell/uPRO/blob/main/tegcn/plots/sigTF_guitar.png)
 
+#### Enhancer - gene interactions
 Distance plot
 ```
 plot_cordist(tcn)
