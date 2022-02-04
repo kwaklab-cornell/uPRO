@@ -1,5 +1,5 @@
 # Fig 2 
-setwd("fig2/")
+setwd("figs/fig2/")
 #rm(list = ls())
 
 library(dplyr)
