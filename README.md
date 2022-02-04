@@ -7,7 +7,7 @@ Nascent RNA sequencing is a powerful method to measure transcription with high r
 - uPRO read count table at gene bodies (tegcn/readcount/gene_erpkm.txt)
 - uPRO read count table at BTS regions (tegcn/readcount/dBTS_readcount.txt)
 ### Contruct network edges
-Under UNIX shell
+Under UNIX shell, run
 ```
 bash scripts/build_edges.sh -t <TFBS bed> -b <BTS bed> -g <gene expression table>
 ```
