@@ -4,10 +4,13 @@ Nascent RNA sequencing is a powerful method to measure transcription with high r
 
 ## Running TEGCN analysis
 
-### data files
-- Bed file of Bidirectional Transcription Sites (BTS) positions
-- uPRO read count table at gene bodies
-- uPRO read count table at BTS regions
+### required data files
+- Bed file of Bidirectional Transcription Sites (BTS) positions (tegcn/bed/dBTS/bed)
+- Bed file of franscription factor binding sites (TFBS) (tegcn/bed/tfbsCons.hg38.bed)
+- uPRO read count table at gene bodies (tegcn/readcount/gene_erpkm.txt)
+- uPRO read count table at BTS regions (tegcn/readcount/dBTS_readcount.txt)
+
+### Contructing network edges
 
 ```
 setwd("tegcn/")
@@ -41,3 +44,7 @@ plot_cordist(tcn)
 ```
 ![dist plot](https://github.com/kwaklab-cornell/uPRO/blob/main/tegcn/plots/enhGene_dist.png)
 
+### R scripts for the manuscript "Integrative nascent RNA methods to reveal cell-type specific transcription programs in peripheral blood and its derivative cells"
+```
+figs/
+```
