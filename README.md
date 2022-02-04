@@ -24,9 +24,11 @@ tf.cor = tegcn_tfcor(tegcn = tcn)
 tf.sig = tfcor_sig(tf.cor)
 plot_guitar(tf.cor, n = 20)
 ```
+![guitar plot](https://github.com/kwaklab-cornell/uPRO/blob/main/tegcn/plots/sigTF_guitar.png)
 
 Distance plot
 ```
 plot_cordist(tcn)
 ```
+![dist plot](https://github.com/kwaklab-cornell/uPRO/blob/main/tegcn/plots/enhGene_dist.png)
 
