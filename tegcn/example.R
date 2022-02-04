@@ -1,5 +1,5 @@
 # TF-enhancer-gene coexpression network
-setwd("./")
+setwd("tegcn/")
 source("scripts/tegcn.R")
 
 # load and calculation coexpression coefficient in
