@@ -1,4 +1,4 @@
-setwd("~/Work/labuser/hk572/uPRO/fig/fig7/")
+setwd("figs/fig7/")
 #rm(list = ls())
 
 library(dplyr)
