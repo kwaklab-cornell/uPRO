@@ -44,7 +44,6 @@ plot_cordist(tcn)
 ```
 ![dist plot](https://github.com/kwaklab-cornell/uPRO/blob/main/tegcn/plots/enhGene_dist.png)
 
-### R scripts for the manuscript "Integrative nascent RNA methods to reveal cell-type specific transcription programs in peripheral blood and its derivative cells"
-```
-figs/
-```
+### Citation
+"Integrative nascent RNA methods to reveal cell-type specific transcription programs in peripheral blood and its derivative cells"
+Rscripts are under figs/
