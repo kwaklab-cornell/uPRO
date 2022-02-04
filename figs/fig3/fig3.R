@@ -1,4 +1,4 @@
-setwd("fig3/")
+setwd("figs/fig3/")
 #rm(list = ls())
 
 library(dplyr)
