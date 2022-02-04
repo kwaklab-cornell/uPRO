@@ -1,0 +1,10 @@
+bedgraph/WB_pCRO_HK1_1910
+bedgraph/WB_pCRO_HK2_1910
+bedgraph/WB_pCRO_HK3_1910
+bedgraph/WB_pCRO_HK4_1910
+bedgraph/WB_pCRO_SL1_1910
+bedgraph/WB_pChRO_EK6_2003
+bedgraph/WB_pChRO_EK33_2003
+bedgraph/WB_pChRO_EK45_2003
+bedgraph/WB_pChRO_EK52_2003
+bedgraph/WB_pChRO_EK53_2003
