@@ -15,23 +15,23 @@ Under UNIX shell
 ```
 bash scripts/build_edges.sh -t <TFBS bed> -b <BTS bed> -g <gene expression table>
 ```
-##### Output
+#### Output
 network edge files under edges directory
 
-##### Example
+#### Example
 ```
 cd tegcn
 bash ./scripts/build_edges.sh -t bed/tfbsCons.hg38.bed -b bed/dBTS.bed -g readcount/gene_erpkm.txt
 ```
 
 ### TEGCN R scripts
-##### Set up scripts
+#### Set up scripts
 ```
 setwd("tegcn/")
 source("scripts/tegcn.R")
 ```
 
-##### Load and calculate coexpression coefficient
+#### Load and calculate coexpression coefficient
 ```
 tcn = make_tegcn()
 ```
